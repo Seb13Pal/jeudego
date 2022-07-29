@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEU DE GO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="card">
+                <div class="card-body">
+                    <h1 style="color: black;">⚫ JEU DE GO 13*13 ⚪ sans intersection (15*15)</h1>
+                    <div id="gomoku">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id=""></th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">A</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">B</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">C</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">D</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">E</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">F</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">G</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">H</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">I</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">J</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">K</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">L</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">M</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">N</th>
+                                    <th style="background-color: lightgrey;" class="grid" id="">O</th>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">1</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">2</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">3</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">4</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td style="background-color: lightgrey;" onclick="displaySymbol(this)" class="grid"
+                                        id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td style="background-color: lightgrey;" onclick="displaySymbol(this)" class="grid"
+                                        id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">5</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">6</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">7</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">8</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td style="background-color: lightgrey;" onclick="displaySymbol(this)" class="grid"
+                                        id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">9</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">10</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">11</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">12</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td style="background-color: lightgrey;" onclick="displaySymbol(this)" class="grid"
+                                        id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td style="background-color: lightgrey;" onclick="displaySymbol(this)" class="grid"
+                                        id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">13</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">14</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="background-color: lightgrey;" class="grid" id="">15</th>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                    <td onclick="displaySymbol(this)" class="grid" id=""></td>
+                                </tr>
+                               
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <div class="card-body">
+                    <input type="button" onclick="refresh(),play()" value="RECOMMENCER">
+                    <input type="button" onclick="play()" value="2 JOUEURS">
+                    <br>
+                    <b><span id="SPlayer1">ScoreJoueur ⚫ : </span></b>
+                    <br>
+                    <b><span id="SPlayer2">ScoreCPU ⚪ : </span></b>
+                    <br>
+                    <br>
+                    <b>
+                        <div id="win"></div>
+                    </b>
+                    <p style="color: black;">© 2022 COPYRIGHT - SEBASTIEN PALACIOS ©</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
